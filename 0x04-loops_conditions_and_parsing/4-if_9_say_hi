@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# writing Best School ten times but say hi on the 9th time using while loop
+
+a=0
+while [ $a -lt 11 ]
+do
+        if [ $a = 9 ]
+        then
+                echo "Hi"
+        else
+                echo "Best School"
+        fi
+        let a+=1
+done
