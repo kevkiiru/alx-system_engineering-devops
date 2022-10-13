@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# writing a script that loops 1 to 10 having iterations in the middle using
+# while loop, if, elif and else statements
+
+a=1
+while [ $a -lt 11 ]
+do
+	if [ $a = 4 ]
+	then
+		echo "bad luck"
+	elif [ $a = 8 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	let $a+=1
+done
