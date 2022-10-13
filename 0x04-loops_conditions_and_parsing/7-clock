@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+# script that writes the time
+
+hours=0
+while [ $hours -lt 13 ]
+do
+	echo "Hour: $hours"
+	minutes=1
+	while [ $minutes -lt 60 ]
+	do
+		echo $minutes
+		let minutes+=1
+	done
+	let hours+=1
+done
