@@ -3,7 +3,7 @@
 # while loop, if, elif and else statements
 
 a=1
-while [ $a -lt 11 ]
+while [ $a -eq 11 ]
 do
 	if [ $a = 4 ]
 	then
