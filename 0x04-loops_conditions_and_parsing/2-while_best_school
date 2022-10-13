@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#writing best school ten times using while loop
+# writing best school ten times using while loop
 
 a=1
 while [ $a -le 10 ]
