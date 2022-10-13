@@ -14,5 +14,5 @@ do
 	else
 		echo "Best School"
 	fi
-	let $a=$a+1
+	let $a+=1
 done
