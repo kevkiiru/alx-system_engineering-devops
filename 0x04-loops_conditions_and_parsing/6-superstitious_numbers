@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# script that writes numbers from 1 to 20 and has iterations in the middle
+
+a=1
+while [ $a -lt 21 ]
+do
+	case $a in
+
+		4)
+			echo $a
+			echo "bad luck from China"
+			;;
+
+		9)
+			echo $a
+			echo "bad luck from Japan"
+			;;
+
+		17)
+			echo $a
+			echo "bad luck from Italy"
+			;;
+
+		*)
+			echo $a
+			;;
+	esac
+
+	let a+=1
+done
