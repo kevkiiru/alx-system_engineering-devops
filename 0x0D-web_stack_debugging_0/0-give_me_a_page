@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# apache running on the container and returns a page with Hello Holberton
+
+sudo /etc/init.d/apache2 restart
