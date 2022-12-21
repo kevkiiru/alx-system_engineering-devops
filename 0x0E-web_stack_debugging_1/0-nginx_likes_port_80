@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#running apache on holberton container
+
+/etc/init.d/apache2 restart
