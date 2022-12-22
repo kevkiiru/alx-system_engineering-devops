@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# replace nginx configuration file with
+cat /etc/nginx/default coderb5vr > /etc/nginx/site
