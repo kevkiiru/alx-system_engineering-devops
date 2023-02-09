@@ -1,6 +1,6 @@
 Postmortem — MySQL server fails to start in Ubuntu 20.04
 
-https://miro.medium.com/max/640/1*IGn_mHFsIpl694u5fxXPqA.webp
+/home/kev/Pictures/devops/1_IGn_mHFsIpl694u5fxXPqA.webp
 
 Issue Summary
 Duration of outage: 6th February, 2023, from 3:00pm to 4:00pm EAT.
