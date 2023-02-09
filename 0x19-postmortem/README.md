@@ -11,7 +11,7 @@ After a successful re-installation of mysql client, which needed to take place d
 Job for mysql.service failed because the control process exited with error code.
 See "systemctl status mysql.service" and "journalctl -xe" for details.
 
-Then check for error message (systemctl status mysql.service) displayed:
+**Then check for error message (systemctl status mysql.service) displayed:**
 
 mysql.service - MySQL Community Server
      Loaded: loaded (/lib/systemd/system/mysql.service; disabled; vendor preset: enabled)
@@ -20,10 +20,10 @@ mysql.service - MySQL Community Server
     
 Initially, we thought the error occurred in relation to the disc space or root privileges. After spending some minutes in debugging, we discovered that the issue was a previous installation error.
 
-**Impact**
+# **Impact**
 This impacted the process to deploy a new application and caused set back to our team on the AirBnB clone project. Fortunately, it was an internal error and was detected at the earliest stage of the project and not before getting out to production.
 
-**Timeline**
+# **Timeline**
 ** 3;00pm EAT ~ After successful installation of mysql.service, I discovered that the service couldn’t start when I ran the command to start the service.
 
 ** 3:07 pm EAT ~ I alerted my project partner and we started investigating the case. At first, we looked at the disk and the configuration file. The initial assumption was made that the issue was with disk space and root privileges.
@@ -34,7 +34,7 @@ This impacted the process to deploy a new application and caused set back to our
 
 ** 4:00 pm EAT ~ MySQL service was successfully installed and the service started successfully.
 
-**Root Cause and Resolution:**
+# **Root Cause and Resolution:**
 Ø Mysql service was previously installed but removed from the system because the vagrant crashed and was restored on the system by re-installation.
 
 Ø The initial re-installation was neither successfully installed nor successfully uninstalled.
@@ -43,7 +43,7 @@ This impacted the process to deploy a new application and caused set back to our
 
 Ø The issue was resolved by getting rid of all instances of the service before a new one was installed.
 
-**Corrective and Preventative Measures:**
+# **Corrective and Preventative Measures:**
 · Train the system administrator on proper uninstallation and installation of MySQL service
 
 · For installation, ensure you have strong internal connections to avoid incomplete installation.
